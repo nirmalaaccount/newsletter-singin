@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+  <!-- Feel free to remove these styles or customize in your own stylesheet 👍 -->
+
+</head>
+
+<body>
+
+  <main class="newsletter">
+    <div class="left-container">
+      <h1>Stay updated!</h1>
+      <p class="parah">Join 60,000+ product managers receiving monthly updates on:</p>
+      <div class="lists">
+        <p><img src="assets/images/icon-list.svg" alt="">Product discovery and building what matters</p>
+        <p><img src="assets/images/icon-list.svg" alt="">Measuring to ensure updates are a success</p>
+        <p><img src="assets/images/icon-list.svg" alt="">And much more!</p>
+      </div>
+
+      <form action="#" id="form">
+        <label for="">Email message
+        <input type="text" id="email" placeholder="email@company.com" onkeydown="validation()"> </label>
+
+        <span id="text"></span>
+      </form>
+      <button class="btn">Subscribe to monthly newsletter</button>
+
+      <div class="right-container">
+        <img src="assets/images/illustration-sign-up-desktop.svg" alt="" class="img-right">
+      </div>
+
+      <div class="mobile-img">
+        <img src="assets/images/illustration-sign-up-mobile.svg" alt="">
+      </div>
+
+    </div>
+  </main>
+
+  <div class="popup-overlay"></div>
+  <div class="popup-thanks">
+    <img src="assets/images/icon-success.svg" alt="">
+    <h1>Thanks for subscribing!</h1>
+    <p>A confirmation email has been sent to <span>ash@loremcompany.com</span>.Please open it and click the button
+      inside to confirm
+      your subscription.</p>
+    <button class="btn2">Dismiss message</button>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>

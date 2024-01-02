@@ -1,0 +1,243 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgb(38, 38, 63);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 800px;
+    margin: 0 auto;
+}
+.newsletter{
+    width:800px;
+    height: 550px;
+    background-color: white;
+    display: flex;
+    flex-direction: row; 
+    border-radius: 20px; 
+}
+.left-container{
+    width: 400px;
+    height: 500px;
+    text-align: left;
+    margin: 30px 30px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.left-container h1{
+    position: absolute;
+    font-size: 60px;
+    font-weight: bold;
+    color: rgb(3, 3, 56);
+    top: 30px;
+    left: 20px;
+}
+.left-container .parah{
+ position: absolute;
+  top: 130px;
+  left: 20px;
+  font-size: 20px;
+  font-weight: 520;
+  
+}
+.lists{
+    position: absolute;
+    top: 190px;
+    font-size: 17px;
+    font-weight: 500;
+}
+.lists p{
+    margin-top: 15px;
+    color: #2e2e2e;
+}
+.lists img{
+    margin-right: 10px;
+    margin-bottom: -6px;
+}
+.left-container button{
+    width: 350px;
+    height: 50px;
+    padding: 10px 20px;
+    position: absolute;
+    top: 420px;
+    left: 10px;
+    border: none;
+    background-color: rgb(1, 1, 46);
+    color: white;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.left-container button:hover{
+    background-color: rgb(223, 70, 15);
+}
+.left-container label{
+    position: absolute;
+    top: 320px;
+    left:9px;
+    font-size: 13px;
+    color: rgb(2, 2, 56);
+    font-weight: 600;
+}
+
+.left-container input{
+    position:absolute;
+    top: 38px;
+    left: 5px;
+    width: 340px;
+    height: 45px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding-left: 20px;
+}
+.right-container img{
+    width: 530px;
+    height: 510px;
+   position: absolute;
+   left: 320px;
+   top: -10px;
+}
+
+
+
+.popup-overlay{
+    background-color: rgb(3, 3, 43);
+    width: 100%;
+    height: 100%;
+   position: absolute;
+   z-index: 1;
+   display: none;
+}
+.popup-thanks{
+    background-color: white;
+    width: 400px;
+    height: 420px;
+    z-index: 2;
+    border-radius: 25px;
+    position: absolute;
+    display: none;
+}
+.popup-thanks img{
+    width: 50px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+.popup-thanks h1{
+    position: absolute;
+    top: 105px;
+    left: 30px;
+    color: rgb(3, 3, 43);
+    font-size: 45px;
+    font-weight: bold;
+    
+}
+.popup-thanks p{
+    position: absolute;
+    width: 330px;
+    top: 230px;
+    left: 30px;
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 500;
+    color:rgb(3, 3, 43);
+}
+.popup-thanks span{
+    color:rgb(1, 1, 46);
+    font-weight: bold;
+}
+.popup-thanks button{
+    position: absolute;
+    bottom: 45px;
+    left: 30px;
+    width: 330px;
+    height: 45px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(1, 1, 46);
+    color: white;
+    font-size: 10px;
+}
+
+@media only screen and (max-width: 600px){
+   
+   body{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    overflow-x: hidden;
+    position: relative;
+   } 
+   .newsletter{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 350px;
+    border-radius: 0;
+   }
+   .img-right{
+    display: none;
+   }
+   .mobile-img{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left: -30px;
+        top: -380px;
+        width: 121%;
+        height: 50%;  
+    }
+    .lists{
+        position: absolute;
+        left: 20px;
+    }
+    .popup-overlay{
+        height: 175vh;
+    }
+    .popup-thanks{
+        margin-top: 46%;
+    }
+}
+@media only screen and (min-width:600px){
+
+    .mobile-img{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
